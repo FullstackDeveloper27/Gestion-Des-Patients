@@ -1,0 +1,170 @@
+{
+    "sourceFile": "vendor/tcg/voyager/src/Http/Controllers/VoyagerPersonelController.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 38,
+            "patches": [
+                {
+                    "date": 1654787240070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1654787246143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new LaravelChart($chart_options);\n+        $chart1 = new Lara($chart_options);\n         return view('voyager::statistic');\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787253996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new Lara($chart_options);\n+        $chart1 = new LaravelC($chart_options);\n         return view('voyager::statistic');\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787264188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new LaravelC($chart_options);\n-        return view('voyager::statistic');\n+        $chart1 = new ($chart_options);\n+        return view('voyager::statistic',);\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787271184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,8 @@\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n         $chart1 = new ($chart_options);\n-        return view('voyager::statistic',);\n+        return view('voyager::statistic', compact('chart1'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787280690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         \n         $chart_options = [\n             'chart_title' => 'Users by months',\n             'report_type' => 'group_by_date',\n-            'model' => 'App\\Models\\User',\n+            'model' => 'App\\Models\\Pa',\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n"
+                },
+                {
+                    "date": 1654787314283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         \n         $chart_options = [\n             'chart_title' => 'Users by months',\n             'report_type' => 'group_by_date',\n-            'model' => 'App\\Models\\Pa',\n+            'model' => 'App\\Patient',\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n"
+                },
+                {
+                    "date": 1654787323859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new ($chart_options);\n+        $chart1 = new Lara ($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787330118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new Lara ($chart_options);\n+        $chart1 = new LaravelC ($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787346826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new LaravelC ($chart_options);\n+        $chart1 = new LaravelChart ($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787358577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n+        $chart1 = new La\n         $chart1 = new LaravelChart ($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n \n"
+                },
+                {
+                    "date": 1654787367059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new La\n+        $chart1 = new Lara\n         $chart1 = new LaravelChart ($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n \n"
+                },
+                {
+                    "date": 1654787376868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n use App\\Visite;\n use Carbon\\Carbon;\n use Illuminate\\Support\\Facades\\DB;\n use Illuminate\\Http\\Request;\n+use Khill\\Lavacharts\\Lavacharts;\n \n class VoyagerPersonelController extends VoyagerBaseController\n {\n     /**\n@@ -30,9 +31,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new Lara\n+        $chart1 = new Lavacharts($ch)\n         $chart1 = new LaravelChart ($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n \n"
+                },
+                {
+                    "date": 1654787389153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n use App\\Visite;\n use Carbon\\Carbon;\n use Illuminate\\Support\\Facades\\DB;\n use Illuminate\\Http\\Request;\n-use Khill\\Lavacharts\\Lavacharts;\n \n class VoyagerPersonelController extends VoyagerBaseController\n {\n     /**\n@@ -31,9 +30,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new Lavacharts($ch)\n+        $chart1 = new Lavacharts($chart_options)\n         $chart1 = new LaravelChart ($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n \n"
+                },
+                {
+                    "date": 1654787507716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,11 @@\n use App\\Visite;\n use Carbon\\Carbon;\n use Illuminate\\Support\\Facades\\DB;\n use Illuminate\\Http\\Request;\n+use LaravelDaily\\LaravelCharts\\Classes\\LaravelChart;\n \n+\n class VoyagerPersonelController extends VoyagerBaseController\n {\n     /**\n      * The attributes that are mass assignable.\n"
+                },
+                {
+                    "date": 1654787514500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new Lavacharts($chart_options)\n+        $chart1 = new LaravelChart($chart_options)\n         $chart1 = new LaravelChart ($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n \n"
+                },
+                {
+                    "date": 1654787607871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,10 +32,9 @@\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n         ];\n-        $chart1 = new LaravelChart($chart_options)\n-        $chart1 = new LaravelChart ($chart_options);\n+        $chart2 = new LaravelChart($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787639150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,16 +25,18 @@\n    \n     {\n         \n         $chart_options = [\n-            'chart_title' => 'Users by months',\n-            'report_type' => 'group_by_date',\n-            'model' => 'App\\Patient',\n-            'group_by_field' => 'created_at',\n-            'group_by_period' => 'month',\n-            'chart_type' => 'bar',\n+            'chart_title' => 'Users by names',\n+            'report_type' => 'group_by_string',\n+            'model' => 'App\\Models\\User',\n+            'group_by_field' => 'name',\n+            'chart_type' => 'pie',\n+            'filter_field' => 'created_at',\n+            'filter_period' => 'month', // show users only registered this month\n         ];\n+    \n         $chart2 = new LaravelChart($chart_options);\n-        return view('voyager::statistic', compact('chart1'));\n+        return view('voyager::statistic', compact('chart2'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787656012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n             'filter_period' => 'month', // show users only registered this month\n         ];\n     \n         $chart2 = new LaravelChart($chart_options);\n+        \n         return view('voyager::statistic', compact('chart2'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787775781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,22 @@\n    \n     {\n         \n         $chart_options = [\n+            'chart_title' => 'Users by months',\n+            'report_type' => 'group_by_date',\n+            'model' => 'App\\Models\\User',\n+            'group_by_field' => 'created_at',\n+            'group_by_period' => 'month',\n+            'chart_type' => 'bar',\n+            'filter_field' => 'created_at',\n+            'filter_days' => 30, // show only last 30 days\n+        ];\n+    \n+        $chart1 = new LaravelChart($chart_options);\n+    \n+    \n+        $chart_options = [\n             'chart_title' => 'Users by names',\n             'report_type' => 'group_by_string',\n             'model' => 'App\\Models\\User',\n             'group_by_field' => 'name',\n@@ -35,9 +49,23 @@\n             'filter_period' => 'month', // show users only registered this month\n         ];\n     \n         $chart2 = new LaravelChart($chart_options);\n-        \n+    \n+        $chart_options = [\n+            'chart_title' => 'Transactions by dates',\n+            'report_type' => 'group_by_date',\n+            'model' => 'App\\Models\\Transaction',\n+            'group_by_field' => 'transaction_date',\n+            'group_by_period' => 'day',\n+            'aggregate_function' => 'sum',\n+            'aggregate_field' => 'amount',\n+            'chart_type' => 'line',\n+        ];\n+    \n+        $chart3 = new LaravelChart($chart_options);\n+    \n+\n         return view('voyager::statistic', compact('chart2'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787782773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,8 @@\n     \n         $chart3 = new LaravelChart($chart_options);\n     \n \n-        return view('voyager::statistic', compact('chart2'));\n+        return view('voyager::statistic', compact('chart1'chart2'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787789840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,8 @@\n     \n         $chart3 = new LaravelChart($chart_options);\n     \n \n-        return view('voyager::statistic', compact('chart1'chart2'));\n+        return view('voyager::statistic', compact('chart1','chart2'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787795795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,8 @@\n     \n         $chart3 = new LaravelChart($chart_options);\n     \n \n-        return view('voyager::statistic', compact('chart1','chart2'));\n+        return view('voyager::statistic', compact('chart1','chart2','chart3'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787812171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n     \n         $chart_options = [\n             'chart_title' => 'Transactions by dates',\n             'report_type' => 'group_by_date',\n-            'model' => 'App\\Models\\Transaction',\n+            'model' => 'Models\\Transaction',\n             'group_by_field' => 'transaction_date',\n             'group_by_period' => 'day',\n             'aggregate_function' => 'sum',\n             'aggregate_field' => 'amount',\n"
+                },
+                {
+                    "date": 1654787817450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n     \n         $chart_options = [\n             'chart_title' => 'Transactions by dates',\n             'report_type' => 'group_by_date',\n-            'model' => 'Models\\Transaction',\n+            'model' => 'Models\\Patient',\n             'group_by_field' => 'transaction_date',\n             'group_by_period' => 'day',\n             'aggregate_function' => 'sum',\n             'aggregate_field' => 'amount',\n"
+                },
+                {
+                    "date": 1654787826795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n     \n         $chart_options = [\n             'chart_title' => 'Users by names',\n             'report_type' => 'group_by_string',\n-            'model' => 'App\\Models\\User',\n+            'model' => 'Models\\Patient',\n             'group_by_field' => 'name',\n             'chart_type' => 'pie',\n             'filter_field' => 'created_at',\n             'filter_period' => 'month', // show users only registered this month\n"
+                },
+                {
+                    "date": 1654787834270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         \n         $chart_options = [\n             'chart_title' => 'Users by months',\n             'report_type' => 'group_by_date',\n-            'model' => 'App\\Models\\User',\n+            'model' => 'Models\\Patient',\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n             'filter_field' => 'created_at',\n"
+                },
+                {
+                    "date": 1654787964714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,47 +25,18 @@\n    \n     {\n         \n         $chart_options = [\n-            'chart_title' => 'Users by months',\n-            'report_type' => 'group_by_date',\n-            'model' => 'Models\\Patient',\n-            'group_by_field' => 'created_at',\n-            'group_by_period' => 'month',\n-            'chart_type' => 'bar',\n-            'filter_field' => 'created_at',\n-            'filter_days' => 30, // show only last 30 days\n-        ];\n-    \n-        $chart1 = new LaravelChart($chart_options);\n-    \n-    \n-        $chart_options = [\n             'chart_title' => 'Users by names',\n             'report_type' => 'group_by_string',\n-            'model' => 'Models\\Patient',\n+            'model' => 'App\\Models\\User',\n             'group_by_field' => 'name',\n             'chart_type' => 'pie',\n             'filter_field' => 'created_at',\n             'filter_period' => 'month', // show users only registered this month\n         ];\n     \n         $chart2 = new LaravelChart($chart_options);\n-    \n-        $chart_options = [\n-            'chart_title' => 'Transactions by dates',\n-            'report_type' => 'group_by_date',\n-            'model' => 'Models\\Patient',\n-            'group_by_field' => 'transaction_date',\n-            'group_by_period' => 'day',\n-            'aggregate_function' => 'sum',\n-            'aggregate_field' => 'amount',\n-            'chart_type' => 'line',\n-        ];\n-    \n-        $chart3 = new LaravelChart($chart_options);\n-    \n-\n-        return view('voyager::statistic', compact('chart1','chart2','chart3'));\n+        return view('voyager::statistic', compact('chart2'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787974798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,22 @@\n    \n     {\n         \n         $chart_options = [\n+            'chart_title' => 'Users by months',\n+            'report_type' => 'group_by_date',\n+            'model' => 'App\\Models\\User',\n+            'group_by_field' => 'created_at',\n+            'group_by_period' => 'month',\n+            'chart_type' => 'bar',\n+            'filter_field' => 'created_at',\n+            'filter_days' => 30, // show only last 30 days\n+        ];\n+    \n+        $chart1 = new LaravelChart($chart_options);\n+    \n+    \n+        $chart_options = [\n             'chart_title' => 'Users by names',\n             'report_type' => 'group_by_string',\n             'model' => 'App\\Models\\User',\n             'group_by_field' => 'name',\n@@ -35,8 +49,23 @@\n             'filter_period' => 'month', // show users only registered this month\n         ];\n     \n         $chart2 = new LaravelChart($chart_options);\n-        return view('voyager::statistic', compact('chart2'));\n+    \n+        $chart_options = [\n+            'chart_title' => 'Transactions by dates',\n+            'report_type' => 'group_by_date',\n+            'model' => 'App\\Models\\Transaction',\n+            'group_by_field' => 'transaction_date',\n+            'group_by_period' => 'day',\n+            'aggregate_function' => 'sum',\n+            'aggregate_field' => 'amount',\n+            'chart_type' => 'line',\n+        ];\n+    \n+        $chart3 = new LaravelChart($chart_options);\n+    \n+\n+        return view('voyager::statistic', compact('chart1'chart2'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787981823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,45 +27,14 @@\n         \n         $chart_options = [\n             'chart_title' => 'Users by months',\n             'report_type' => 'group_by_date',\n-            'model' => 'App\\Models\\User',\n+            'model' => 'App\\Patient',\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n             'chart_type' => 'bar',\n-            'filter_field' => 'created_at',\n-            'filter_days' => 30, // show only last 30 days\n         ];\n-    \n-        $chart1 = new LaravelChart($chart_options);\n-    \n-    \n-        $chart_options = [\n-            'chart_title' => 'Users by names',\n-            'report_type' => 'group_by_string',\n-            'model' => 'App\\Models\\User',\n-            'group_by_field' => 'name',\n-            'chart_type' => 'pie',\n-            'filter_field' => 'created_at',\n-            'filter_period' => 'month', // show users only registered this month\n-        ];\n-    \n         $chart2 = new LaravelChart($chart_options);\n-    \n-        $chart_options = [\n-            'chart_title' => 'Transactions by dates',\n-            'report_type' => 'group_by_date',\n-            'model' => 'App\\Models\\Transaction',\n-            'group_by_field' => 'transaction_date',\n-            'group_by_period' => 'day',\n-            'aggregate_function' => 'sum',\n-            'aggregate_field' => 'amount',\n-            'chart_type' => 'line',\n-        ];\n-    \n-        $chart3 = new LaravelChart($chart_options);\n-    \n-\n-        return view('voyager::statistic', compact('chart1'chart2'));\n+        return view('voyager::statistic', compact('chart2'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654787999136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,11 +30,11 @@\n             'report_type' => 'group_by_date',\n             'model' => 'App\\Patient',\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n-            'chart_type' => 'bar',\n+            'chart_type' => 'pie',\n         ];\n-        $chart2 = new LaravelChart($chart_options);\n-        return view('voyager::statistic', compact('chart2'));\n+        $chart1 = new LaravelChart($chart_options);\n+        return view('voyager::statistic', compact('chart1'));\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1654788035999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             'report_type' => 'group_by_date',\n             'model' => 'App\\Patient',\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n-            'chart_type' => 'pie',\n+            'chart_type' => 'line',\n         ];\n         $chart1 = new LaravelChart($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n"
+                },
+                {
+                    "date": 1654788117901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,9 @@\n      * @var array \n      */\n     public function statistic()\n    \n-    {\n-        \n+    {        \n         $chart_options = [\n             'chart_title' => 'Users by months',\n             'report_type' => 'group_by_date',\n             'model' => 'App\\Patient',\n"
+                },
+                {
+                    "date": 1654788129427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,8 @@\n <?php\n \n namespace TCG\\Voyager\\Http\\Controllers;\n \n-use App\\Branch;\n-use App\\Models\\User;\n-use App\\Patient;\n-use App\\Service;\n-use TCG\\Voyager\\Facades\\Voyager;\n-use App\\Visite;\n-use Carbon\\Carbon;\n-use Illuminate\\Support\\Facades\\DB;\n-use Illuminate\\Http\\Request;\n use LaravelDaily\\LaravelCharts\\Classes\\LaravelChart;\n \n \n class VoyagerPersonelController extends VoyagerBaseController\n@@ -34,6 +25,5 @@\n         ];\n         $chart1 = new LaravelChart($chart_options);\n         return view('voyager::statistic', compact('chart1'));\n     }\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1655130680451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,13 @@\n <?php\n \n namespace TCG\\Voyager\\Http\\Controllers;\n \n+use Illuminate\\Http\\Request;\n+use Illuminate\\Support\\Facades\\DB;\n use LaravelDaily\\LaravelCharts\\Classes\\LaravelChart;\n+use TCG\\Voyager\\Models\\DataType;\n \n-\n class VoyagerPersonelController extends VoyagerBaseController\n {\n     /**\n      * The attributes that are mass assignable.\n@@ -13,17 +15,36 @@\n      * @var array \n      */\n     public function statistic()\n    \n-    {        \n+    {     \n         $chart_options = [\n-            'chart_title' => 'Users by months',\n+            'chart_title' => 'Users by months',            \n             'report_type' => 'group_by_date',\n             'model' => 'App\\Patient',\n             'group_by_field' => 'created_at',\n             'group_by_period' => 'month',\n-            'chart_type' => 'line',\n+            'chart_type' => 'pie',\n         ];\n         $chart1 = new LaravelChart($chart_options);\n-        return view('voyager::statistic', compact('chart1'));\n+        return view('voyager::statistic', compact('chart1'));   \n     }\n+\n+    public function chart(Request $request)\n+   \n+    {     \n+        $table = DataType::select('data_types.display_name_singular')->get();\n+\n+        $tab = explode(\" \\ \", $request->dropdown1);\n+        dd\n+        $chart_options = [\n+            'chart_title' => $tab[sizeof($tab)-1].' by months',            \n+            'report_type' => 'group_by_date',\n+            'model' => $request->dropdown1,\n+            'group_by_field' => 'created_at',\n+            'group_by_period' => 'month',\n+            'chart_type' => $request->chart,\n+        ];\n+        $chart1 = new LaravelChart($chart_options);\n+        return view('voyager::statistic', compact('chart1'));   \n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1655130687832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,10 @@\n    \n     {     \n         $table = DataType::select('data_types.display_name_singular')->get();\n \n-        $tab = explode(\" \\ \", $request->dropdown1);\n-        dd\n+        $tab = explode(\"\\\", $request->dropdown1);\n+        \n         $chart_options = [\n             'chart_title' => $tab[sizeof($tab)-1].' by months',            \n             'report_type' => 'group_by_date',\n             'model' => $request->dropdown1,\n"
+                },
+                {
+                    "date": 1655130695778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n    \n     {     \n         $table = DataType::select('data_types.display_name_singular')->get();\n \n-        $tab = explode(\"\\\", $request->dropdown1);\n+        $tab = explode(\"\\\\\", $request->dropdown1);\n         \n         $chart_options = [\n             'chart_title' => $tab[sizeof($tab)-1].' by months',            \n             'report_type' => 'group_by_date',\n"
+                },
+                {
+                    "date": 1655134132832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,17 +16,8 @@\n      */\n     public function statistic()\n    \n     {     \n-        $chart_options = [\n-            'chart_title' => 'Users by months',            \n-            'report_type' => 'group_by_date',\n-            'model' => 'App\\Patient',\n-            'group_by_field' => 'created_at',\n-            'group_by_period' => 'month',\n-            'chart_type' => 'pie',\n-        ];\n-        $chart1 = new LaravelChart($chart_options);\n         return view('voyager::statistic', compact('chart1'));   \n     }\n \n     public function chart(Request $request)\n"
+                },
+                {
+                    "date": 1655134359921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         $table = DataType::select('data_types.display_name_singular')->get();\n \n         $tab = explode(\"\\\\\", $request->dropdown1);\n         \n-        $chart_options = [\n+        $chart_options = [s\n             'chart_title' => $tab[sizeof($tab)-1].' by months',            \n             'report_type' => 'group_by_date',\n             'model' => $request->dropdown1,\n             'group_by_field' => 'created_at',\n"
+                }
+            ],
+            "date": 1654787240070,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace TCG\\Voyager\\Http\\Controllers;\n\nuse App\\Branch;\nuse App\\Models\\User;\nuse App\\Patient;\nuse App\\Service;\nuse TCG\\Voyager\\Facades\\Voyager;\nuse App\\Visite;\nuse Carbon\\Carbon;\nuse Illuminate\\Support\\Facades\\DB;\nuse Illuminate\\Http\\Request;\n\nclass VoyagerPersonelController extends VoyagerBaseController\n{\n    /**\n     * The attributes that are mass assignable.\n     *\n     * @var array \n     */\n    public function statistic()\n   \n    {\n        \n        $chart_options = [\n            'chart_title' => 'Users by months',\n            'report_type' => 'group_by_date',\n            'model' => 'App\\Models\\User',\n            'group_by_field' => 'created_at',\n            'group_by_period' => 'month',\n            'chart_type' => 'bar',\n        ];\n        $chart1 = new LaravelChart($chart_options);\n        return view('voyager::statistic');\n    }\n\n}"
+        }
+    ]
+}
