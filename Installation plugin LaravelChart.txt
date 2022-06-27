@@ -1,0 +1,10 @@
+Link to visited :
+https://github.com/LaravelDaily/laravel-charts
+
+
+Laravel Chart :
+it's a Package to generate Chart.js charts directly from Laravel/Blade, without interacting with JavaScript.
+
+
+Commande :
+composer require laraveldaily/laravel-charts
